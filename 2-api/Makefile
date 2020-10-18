@@ -16,7 +16,7 @@ build:
 
 
 test:
-	go test ./.../usecase/ -cover
+	go test ./... -cover
 
 clean:
 	rm -rf ./bin
