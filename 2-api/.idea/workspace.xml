@@ -14,9 +14,23 @@
       <change afterPath="$PROJECT_DIR$/.idea/2-api.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/movie/controller/http/movie_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/movie/movie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/movie/repository/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/movie/repository/rpc/movie_repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/movie/usecase/usecase.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/movie/repository/endpoint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/controller/rpc/movie_rpc_server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/controller/rpc/pb/movie.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/controller/rpc/pb/movie.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/movie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/repository/http/movie_repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/repository/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/usecase/usecase.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +75,27 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/movie-app/movie/controller/rpc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build movie-backend/movie-app" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="2-api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/movie-app/main.go" />
+      <package value="movie-backend/movie-app" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build movie-backend/movie-app" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -87,5 +122,45 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="519" y="289" key="#Go_Modules/0.0.1440.900@0.0.1440.900" timestamp="1603021766424" />
+    <state x="429" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603026905420">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="429" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1603026905420" />
+    <state width="1396" height="303" key="GridCell.Tab.0.bottom" timestamp="1603040353080">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603040353080" />
+    <state width="1396" height="303" key="GridCell.Tab.0.center" timestamp="1603040353079">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603040353079" />
+    <state width="1396" height="303" key="GridCell.Tab.0.left" timestamp="1603040353079">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603040353079" />
+    <state width="1396" height="303" key="GridCell.Tab.0.right" timestamp="1603040353080">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603040353080" />
+    <state width="1396" height="303" key="GridCell.Tab.1.bottom" timestamp="1603040353082">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603040353082" />
+    <state width="1396" height="303" key="GridCell.Tab.1.center" timestamp="1603040353081">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1603040353081" />
+    <state width="1396" height="303" key="GridCell.Tab.1.left" timestamp="1603040353080">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1603040353080" />
+    <state width="1396" height="303" key="GridCell.Tab.1.right" timestamp="1603040353081">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1603040353081" />
+    <state x="420" y="195" width="600" height="510" key="find.popup" timestamp="1603042832437">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="420" y="195" width="600" height="510" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1603042832437" />
   </component>
 </project>
