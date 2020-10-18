@@ -1,7 +1,7 @@
 {
-  "MovieServiceClientConfig": {
-    "Host": "movie-app",
-    "Port": "9080"
+  "MovieDBConfig": {
+    "BaseURL": "https://www.omdbapi.com/",
+    "APIKey": "faf7e5bb&s"
   },
-  "Addr": ":55501"
+  "Addr": ":9080"
 }

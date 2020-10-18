@@ -2,12 +2,11 @@ package config
 
 // AppConfig application config
 type AppConfig struct {
-	MovieServiceClient MovieServiceClientConfig
-	Addr               string
+	MovieDBConfig MovieDBConfig
+	Addr          string
 }
 
-// MovieServiceClientConfig movie service client config
-type MovieServiceClientConfig struct {
-	Host    string
-	Port    string
+type MovieDBConfig struct {
+	APIKey  string
+	BaseURL string
 }
