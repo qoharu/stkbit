@@ -11,23 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3882e68d-9cd2-47a6-8399-2d95c2e74ea8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile.api" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile.movie" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/config/development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/config/local.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/bin/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/config/development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/config/local.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/movie/repository/mock_repository/mock_repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/movie/usecase/usecase_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/controller/rpc/movie_rpc_server_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/repository/mock_repository/mock_repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/movie/usecase/usecase_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/api-app/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-app/bin/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-app/movie/repository/http/movie_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-app/movie/repository/http/movie_repository.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,12 +86,12 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/movie-app/movie/controller/rpc" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/movie-app" />
-      <recent name="$PROJECT_DIR$/movie-app/movie/controller/rpc" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Go Test.Test_gRPCServer_SearchMovie in movie-backend/movie-app/movie/controller/rpc">
     <configuration name="go build movie-backend/movie-app" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="2-api" />
       <working_directory value="$PROJECT_DIR$" />
@@ -106,6 +99,28 @@
       <filePath value="$PROJECT_DIR$/movie-app/main.go" />
       <package value="movie-backend/movie-app" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_gRPCServer_SearchMovie in movie-backend/movie-app/movie/controller/rpc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="2-api" />
+      <working_directory value="$PROJECT_DIR$/movie-app/movie/controller/rpc" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="movie-backend/movie-app/movie/controller/rpc" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_gRPCServer_SearchMovie\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_movieUseCase_SearchMovie in movie-backend/movie-app/movie/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="2-api" />
+      <working_directory value="$PROJECT_DIR$/movie-app/movie/usecase" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="movie-backend/movie-app/movie/usecase" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_movieUseCase_SearchMovie\E$" />
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -118,6 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_gRPCServer_SearchMovie in movie-backend/movie-app/movie/controller/rpc" />
+        <item itemvalue="Go Test.Test_movieUseCase_SearchMovie in movie-backend/movie-app/movie/usecase" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Go Build.go build movie-backend/movie-app" />
       </list>
@@ -156,22 +173,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="429" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1603048691646" />
-    <state width="1396" height="303" key="GridCell.Tab.0.bottom" timestamp="1603040353080">
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1603053766105">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.23.1440.825@0.23.1440.825" timestamp="1603053766105" />
+    <state width="1396" height="245" key="GridCell.Tab.0.bottom" timestamp="1603056019191">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603040353080" />
-    <state width="1396" height="303" key="GridCell.Tab.0.center" timestamp="1603040353079">
+    <state width="1396" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603056019191" />
+    <state width="1396" height="245" key="GridCell.Tab.0.center" timestamp="1603056019190">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603040353079" />
-    <state width="1396" height="303" key="GridCell.Tab.0.left" timestamp="1603040353079">
+    <state width="1396" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603056019190" />
+    <state width="1396" height="245" key="GridCell.Tab.0.left" timestamp="1603056019189">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603040353079" />
-    <state width="1396" height="303" key="GridCell.Tab.0.right" timestamp="1603040353080">
+    <state width="1396" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603056019189" />
+    <state width="1396" height="245" key="GridCell.Tab.0.right" timestamp="1603056019191">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603040353080" />
+    <state width="1396" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603056019191" />
     <state width="1396" height="303" key="GridCell.Tab.1.bottom" timestamp="1603040353082">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

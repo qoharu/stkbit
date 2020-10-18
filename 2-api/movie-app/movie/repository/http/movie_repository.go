@@ -32,7 +32,6 @@ func (mr *movieRepository) Search(spec movie.MovieSearchSpec) (response movie.Mo
 	}
 
 	json.NewDecoder(resp.Body).Decode(&response)
-	log.Println(response)
 	return response, nil
 }
 
