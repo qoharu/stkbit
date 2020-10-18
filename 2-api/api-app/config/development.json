@@ -1,0 +1,7 @@
+{
+  "MovieServiceClient": {
+    "Host": "movie-app",
+    "Port": "9080"
+  },
+  "Addr": ":55501"
+}
