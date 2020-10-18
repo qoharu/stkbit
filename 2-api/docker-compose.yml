@@ -1,0 +1,22 @@
+version: "2.3"
+services:
+  movie-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.movie
+    container_name: movie-app
+    ports:
+      - 9080:9080
+    environment:
+      - STOCKBIT_ENV=development
+  api-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: api-app
+    ports:
+      - 55501:55501
+    environment:
+      - STOCKBIT_ENV=development
+    depends_on:
+      - movie-app

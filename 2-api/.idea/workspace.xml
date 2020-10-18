@@ -11,31 +11,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3882e68d-9cd2-47a6-8399-2d95c2e74ea8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/2-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/movie/controller/http/movie_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/movie/movie.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/movie/repository/repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/movie/repository/rpc/movie_repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-app/movie/usecase/usecase.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/movie/controller/rpc/movie_rpc_server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/movie/controller/rpc/pb/movie.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/movie/controller/rpc/pb/movie.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/movie/movie.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/movie/repository/http/movie_repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/movie/repository/repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-app/movie/usecase/usecase.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.api" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.movie" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/config/development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-app/config/local.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/bin/main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/config/development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-app/config/local.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/api-app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-app/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockerExecCommand">
+    <ExecCommand>
+      <option name="command" value="grpcurl --plaintext localhost:9080 list" />
+      <option name="imageId" value="sha256:0211b3edb0b17fa0dc4a9c118a50041f58e016f3e57c5d8ba29c60d82ff3159f" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="cat config/development.json" />
+      <option name="imageId" value="sha256:31a5211585552cdbce749c24d9103b1c827f6babe7c4fd2d2f989947c441baa3" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="cat movie-app/config/development.json" />
+      <option name="imageId" value="sha256:31a5211585552cdbce749c24d9103b1c827f6babe7c4fd2d2f989947c441baa3" />
+    </ExecCommand>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,7 +78,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,11 +87,18 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/movie-app" />
+      <recent name="$PROJECT_DIR$/api-app/config" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/movie-app" />
       <recent name="$PROJECT_DIR$/movie-app/movie/controller/rpc" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="go build movie-backend/movie-app" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="2-api" />
       <working_directory value="$PROJECT_DIR$" />
@@ -90,8 +108,17 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Go Build.go build movie-backend/movie-app" />
       </list>
     </recent_temporary>
@@ -99,6 +126,9 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -122,10 +152,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="519" y="289" key="#Go_Modules/0.0.1440.900@0.0.1440.900" timestamp="1603021766424" />
-    <state x="429" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603026905420">
+    <state x="429" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603048691646">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="429" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1603026905420" />
+    <state x="429" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1603048691646" />
     <state width="1396" height="303" key="GridCell.Tab.0.bottom" timestamp="1603040353080">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -162,5 +192,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="420" y="195" width="600" height="510" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1603042832437" />
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1603052392423">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1603052392423" />
   </component>
 </project>

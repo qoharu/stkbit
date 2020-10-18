@@ -13,12 +13,12 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 # Copy the source from the current directory to the Working Directory inside the container
-COPY api-app .
+COPY . .
 
 # Build the Go app
-RUN env GOOS=linux go build ./ -ldflags="-s -w" -o bin/main
+RUN cd movie-app && env GOOS=linux go build -ldflags="-s -w" -o bin/main
 
-EXPOSE 55501
+EXPOSE 9080
 
 # Command to run the executable
-CMD ["./bin/main"]
+CMD ["./movie-app/bin/main"]
